@@ -70,7 +70,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
 
         @Override
         public void onClick(View v) {
-            mListener.itemClicked(resName.getId());
+            mListener.itemClicked(getAdapterPosition());
         }
     }
 }
