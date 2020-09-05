@@ -16,11 +16,11 @@ import pop.uz.guidetour.model.Restaurants;
 
 public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>{
 
-    public ArrayList restList;
+    public static ArrayList<Restaurants> restList = new ArrayList<>();
     public static AdapterListener mListener;
 
-    public RestaurantAdapter(ArrayList restList, AdapterListener mListener) {
-        this.restList = restList;
+    public RestaurantAdapter(ArrayList<Restaurants> restList, AdapterListener mListener) {
+        RestaurantAdapter.restList = restList;
         RestaurantAdapter.mListener = mListener;
     }
 
@@ -38,11 +38,12 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     @Override
     public void onBindViewHolder(@NonNull RestaurantViewHolder holder, int position) {
 
-        Restaurants restaurants = (Restaurants) restList.get(position);
+        Restaurants restaurants = restList.get(position);
 
         holder.resName.setText(restaurants.name);
         holder.restLocation.setText(restaurants.location);
         holder.image.setImageResource(restaurants.image);
+
 
 
     }
