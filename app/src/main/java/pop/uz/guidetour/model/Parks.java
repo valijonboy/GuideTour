@@ -2,9 +2,9 @@ package pop.uz.guidetour.model;
 
 public class Parks {
 
-    private String name;
-    private String location;
-    private int image;
+    public String name;
+    public String location;
+    public int image;
 
     public Parks(String name, String location, int image) {
         this.name = name;

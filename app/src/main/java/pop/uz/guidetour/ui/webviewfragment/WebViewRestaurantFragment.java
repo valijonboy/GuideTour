@@ -1,4 +1,4 @@
-package pop.uz.guidetour.ui.webview;
+package pop.uz.guidetour.ui.webviewfragment;
 
 import android.annotation.SuppressLint;
 
@@ -22,20 +22,21 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import pop.uz.guidetour.R;
-import pop.uz.guidetour.RestaurantsNames;
+import pop.uz.guidetour.enumnames.RestaurantsNames;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class WebViewFragment extends Fragment {
-    private static final String TAG = WebViewFragment.class.getSimpleName();
+public class WebViewRestaurantFragment extends Fragment {
+    //this is my own code fragment from 33...49
+    private static final String TAG = WebViewRestaurantFragment.class.getSimpleName();
     WebView mWebView;
     private RestaurantsNames mNames;
     private String mUrl;
 
-    public static WebViewFragment newInstance(RestaurantsNames names) {
-        WebViewFragment fragment = new WebViewFragment();
+    public static WebViewRestaurantFragment newInstance(RestaurantsNames names) {
+        WebViewRestaurantFragment fragment = new WebViewRestaurantFragment();
         fragment.setRestrName(names);
         return fragment;
     }
@@ -44,7 +45,7 @@ public class WebViewFragment extends Fragment {
         this.mNames = names;
     }
 
-    public WebViewFragment() {
+    public WebViewRestaurantFragment() {
     }
 
     /**
@@ -134,6 +135,11 @@ public class WebViewFragment extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
+        //This is my own code fragment from 139...156
+        View view = inflater.inflate(R.layout.fragment_web_view, container, false);
+
+        mWebView = view.findViewById(R.id.webView);
+
         if (mNames == RestaurantsNames.REST1){
             mUrl = "file:///android_asset/restr1.html";
         }
@@ -153,8 +159,13 @@ public class WebViewFragment extends Fragment {
             mUrl = "file:///android_asset/restr6.html";
         }
 
-        return inflater.inflate(R.layout.fragment_web_view, container, false);
+
+
+        return view;
     }
+
+
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -176,7 +187,7 @@ public class WebViewFragment extends Fragment {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         view.findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
-
+       // this is my own code fragment from 183...201
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setDisplayZoomControls(true);
         webSettings.setSupportZoom(true);
@@ -286,4 +297,5 @@ public class WebViewFragment extends Fragment {
         }
         return actionBar;
     }
+
 }

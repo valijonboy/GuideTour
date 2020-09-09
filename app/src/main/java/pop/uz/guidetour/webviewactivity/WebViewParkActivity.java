@@ -1,4 +1,4 @@
-package pop.uz.guidetour;
+package pop.uz.guidetour.webviewactivity;
 
 import android.os.Bundle;
 
@@ -7,11 +7,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import pop.uz.guidetour.ui.webview.WebViewFragment;
+import pop.uz.guidetour.R;
+import pop.uz.guidetour.enumnames.ParkNames;
+import pop.uz.guidetour.ui.parks.ParkFragment;
+import pop.uz.guidetour.ui.webviewfragment.WebViewParkFragment;
 
-public class WebViewActivity extends AppCompatActivity {
+public class WebViewParkActivity extends AppCompatActivity {
 
-    public static final String INTENT_RESTR_NAME = "intent_restaurant_name";
+  public static final String INTENT_PARK_NAME = "intent_park_name";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,9 +23,9 @@ public class WebViewActivity extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
 
-        if (bundle != null && bundle.containsKey(INTENT_RESTR_NAME)){
-            RestaurantsNames names = (RestaurantsNames) bundle.getSerializable(INTENT_RESTR_NAME);
-            openFragment(WebViewFragment.newInstance(names));
+        if (bundle != null && bundle.containsKey(INTENT_PARK_NAME)){
+           ParkNames names = (ParkNames) bundle.getSerializable(INTENT_PARK_NAME);
+            openFragment(WebViewParkFragment.newInstance(names));
         }
     }
 

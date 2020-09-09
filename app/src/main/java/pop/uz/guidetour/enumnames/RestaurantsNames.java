@@ -1,4 +1,4 @@
-package pop.uz.guidetour;
+package pop.uz.guidetour.enumnames;
 
 public enum RestaurantsNames {
 
