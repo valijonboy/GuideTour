@@ -28,9 +28,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-        <activity android:name=".webviewactivity.WebViewRestaurantActivity"></activity>
-
-        <activity android:name=".webviewactivity.WebViewParkActivity"></activity>
 
         <activity
             android:name=".NavigationDrawerActivity"

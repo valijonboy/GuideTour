@@ -3,19 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_sretenskiy">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="pop.uz.guidetour.ui.restaurant.RestaurantFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_restaurant" />
+        android:id="@+id/nav_sretenskiy"
+        android:name="pop.uz.guidetour.ui.fragments.SretenskyBulvar"
+        android:label="@string/sretenskiy_bulvar"
+        tools:layout="@layout/fragment_sretensky_bulvar" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="pop.uz.guidetour.ui.parks.ParkFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_park" />
+        android:id="@+id/nav_petrovskiy"
+        android:name="pop.uz.guidetour.ui.fragments.PetrovskiyBulvar"
+        android:label="@string/petrovskiy_bulvar"
+        tools:layout="@layout/fragment_petrovskiy_bulvar" />
+
+    <fragment
+        android:id="@+id/nav_svetnoy"
+        android:name="pop.uz.guidetour.ui.fragments.SvetnoyBulvar"
+        android:label="@string/svetnoy_bulvar"
+        tools:layout="@layout/fragment_svetnoy_bulvar"/>
+
+    <fragment
+        android:id="@+id/nav_tverskoy"
+        android:name="pop.uz.guidetour.ui.fragments.TverskoyBulvar"
+        android:label="@string/tverskoy_bulvar"
+        tools:layout="@layout/fragment_tverskoy_bulvar"/>
 
     <fragment
         android:id="@+id/nav_map"

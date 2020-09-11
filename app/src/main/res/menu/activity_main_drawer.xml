@@ -5,13 +5,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_sretenskiy"
+            android:icon="@drawable/bulvard_icon"
+            android:title="@string/sretenskiy_bulvar" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_petrovskiy"
+            android:icon="@drawable/bulvard_icon"
+            android:title="@string/petrovskiy_bulvar" />
+        <item
+            android:id="@+id/nav_svetnoy"
+            android:icon="@drawable/bulvard_icon"
+            android:title="@string/svetnoy_bulvar"/>
+        <item
+            android:id="@+id/nav_tverskoy"
+            android:icon="@drawable/bulvard_icon"
+            android:title="@string/tverskoy_bulvar"/>
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/ic_map"

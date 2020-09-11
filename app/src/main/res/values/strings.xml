@@ -13,4 +13,11 @@
     <string name="map">Map</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sretenskiy_bulvar">Sretenskiy Bulvar</string>
+    <string name="petrovskiy_bulvar">Petrovskiy Bulvar</string>
+    <string name="svetnoy_bulvar">Svetnoy Bulvar</string>
+    <string name="tverskoy_bulvar">Tverskoy Bulvar</string>
+    <string name="textview">TextView</string>
 </resources>

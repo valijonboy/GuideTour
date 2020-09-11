@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item"
+    android:background="@color/background_item"
+    android:elevation="50dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_item">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/textview"
+        android:textSize="@dimen/textname_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_locat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:text="@string/textview" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="2dp"
+        android:text="@string/textview" />
+
+    <ImageView
+        android:id="@+id/img_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top10"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</LinearLayout>
