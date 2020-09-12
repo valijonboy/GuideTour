@@ -51,14 +51,14 @@ public class TverskoyBulvar extends Fragment {
 
         bulvarList = new ArrayList<>();
 
-        bulvarList.add(new Bulvar("Tverskoy bulvar", "Tverskoy bulvar, Moskow, Russia",
-                "Metro Tverskaya", R.drawable.tverskoy_bulvar));
-        bulvarList.add(new Bulvar("Teatr imeni Pushkina", "Tverskoy blvd., 23",
-                "teatrpushkin.ru", R.drawable.teatr_pushkin));
-        bulvarList.add(new Bulvar("Remy Kitchen Bakery", "Malaya Bronnaya Str., 2",
-                "remykitchenbakery.ru", R.drawable.remy_kitchenbakery));
-        bulvarList.add(new Bulvar("MXAT im. Gorkogo", "Tverskoy blvd., 22",
-                "mxat-teatr.ru", R.drawable.mxat_teatr));
+        bulvarList.add(new Bulvar(getString(R.string.tverskoy_bulvar), getString(R.string.loc_tverskoy),
+                getString(R.string.data_tverskoy), R.drawable.tverskoy_bulvar));
+        bulvarList.add(new Bulvar(getString(R.string.teatr_pushkin), getString(R.string.loc_pushkin),
+                getString(R.string.data_teatr_pushkin), R.drawable.teatr_pushkin));
+        bulvarList.add(new Bulvar(getString(R.string.remy_kitch), getString(R.string.loc_remykitch),
+                getString(R.string.data_remykitch), R.drawable.remy_kitchenbakery));
+        bulvarList.add(new Bulvar(getString(R.string.mxat_gork), getString(R.string.loc_mxat),
+                getString(R.string.data_mxat), R.drawable.mxat_teatr));
 
 
     }

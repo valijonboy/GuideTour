@@ -46,14 +46,14 @@ public class SvetnoyBulvar extends Fragment {
 
         bulvarList = new ArrayList<>();
 
-        bulvarList.add(new Bulvar("Svetnoy bulvar", "Tsvetnoy bulvar, Moskow, Russia",
-                "Metro Tsvetnoy bulvar", R.drawable.svetnoy_bulvar));
-        bulvarList.add(new Bulvar("Moskovskiy tsirk Nikulina", "Tsvetnoy bulvar., 13",
-                "circusnikulin.ru", R.drawable.sirk_nikulin));
-        bulvarList.add(new Bulvar("Chaihona №1", "Tsvetnoy bul., 2",
-                "chaihona.ru", R.drawable.chaihona_n1));
-        bulvarList.add(new Bulvar("Tsentralniy rinok", "Rozhdestvensky Blvd., 1",
-                "moskowcentralmarket.ru", R.drawable.sentralny_rinok));
+        bulvarList.add(new Bulvar(getString(R.string.svetnoy_bulvar), getString(R.string.loc_svetbulvd),
+                getString(R.string.data_svetbulvd), R.drawable.svetnoy_bulvar));
+        bulvarList.add(new Bulvar(getString(R.string.sirk), getString(R.string.loc_sirk),
+                getString(R.string.data_sirk), R.drawable.sirk_nikulin));
+        bulvarList.add(new Bulvar(getString(R.string.chaihona), getString(R.string.loc_chaihona),
+                getString(R.string.data_chaihona), R.drawable.chaihona_n1));
+        bulvarList.add(new Bulvar(getString(R.string.rinok), getString(R.string.loc_rinok),
+                getString(R.string.data_rinok), R.drawable.sentralny_rinok));
 
 
     }

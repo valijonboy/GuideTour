@@ -45,14 +45,14 @@ public class SretenskyBulvar extends Fragment {
 
         bulvarList = new ArrayList<>();
 
-        bulvarList.add(new Bulvar("Sretensky Bulvar", "Sretenskiy bulvar, Moskow",
-                "Metro Sretenskiy bulvar", R.drawable.sretenskoy_bulvar));
-        bulvarList.add(new Bulvar("Cafe Sandal", "Sretenskiy bul., 3",
-                "cafesandal.ru", R.drawable.kafe_sandal));
-        bulvarList.add(new Bulvar(" Theatre Trikster", "Sretenskiy bul., 6/1s2",
-                "trikst.com", R.drawable.teatr_trikster));
-        bulvarList.add(new Bulvar("Nailon Studio", "Sretensky bul., 6/1s1",
-                "+7(495) 120-18-03", R.drawable.nailon_studio));
+        bulvarList.add(new Bulvar(getString(R.string.sretenskiy_bulvar), getString(R.string.loc_sretbul),
+                getString(R.string.data_sretbul), R.drawable.sretenskoy_bulvar));
+        bulvarList.add(new Bulvar(getString(R.string.cafe_sandal), getString(R.string.loc_cafe_sandal),
+                getString(R.string.data_cafe_sandal), R.drawable.kafe_sandal));
+        bulvarList.add(new Bulvar(getString(R.string.trikster), getString(R.string.loc_trikster),
+                getString(R.string.data_trikster), R.drawable.teatr_trikster));
+        bulvarList.add(new Bulvar(getString(R.string.nailon), getString(R.string.loc_nailon),
+                getString(R.string.data_nailon), R.drawable.nailon_studio));
     }
 
 }

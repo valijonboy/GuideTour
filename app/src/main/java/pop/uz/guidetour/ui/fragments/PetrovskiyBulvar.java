@@ -55,31 +55,15 @@ public class PetrovskiyBulvar extends Fragment {
 
         bulvarList = new ArrayList<>();
 
-        bulvarList.add(new Bulvar("Petrovskiy bulvar", "Petrovskiy bud., Moskow",
-                "Metro Trubnaya", R.drawable.petrovskiy_bulvar));
-        bulvarList.add(new Bulvar("BRANDSHOP", "Petrovskiy bud., 21",
-                "brandshop.ru", R.drawable.brandshop));
-        bulvarList.add(new Bulvar("Church Bogolyubovskoy ikoni", "28 Petrovka street",
-                "M. Trubnaya 580 m.", R.drawable.bogolyubovskiy_ikoni));
-        bulvarList.add(new Bulvar("AllTime.ru", "Petrovskiy bud., 21",
-                "alltime.ru", R.drawable.alltime_ru));
+        bulvarList.add(new Bulvar(getString(R.string.petrovskiy_bulvar), getString(R.string.location_petrovskiy),
+                getString(R.string.metro_trubnaya), R.drawable.petrovskiy_bulvar));
+        bulvarList.add(new Bulvar(getString(R.string.brandshop), getString(R.string.locat_brandshop),
+                getString(R.string.site_brandshop), R.drawable.brandshop));
+        bulvarList.add(new Bulvar(getString(R.string.church_bogolyuboov), getString(R.string.loc_church_bogol),
+                getString(R.string.data_church_bogol), R.drawable.bogolyubovskiy_ikoni));
+        bulvarList.add(new Bulvar(getString(R.string.alltime), getString(R.string.loc_alltime),
+                getString(R.string.data_alltime), R.drawable.alltime_ru));
 
 
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home: {
-                FragmentManager fm = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
-                if (fm.getBackStackEntryCount() > 0) {
-                    fm.popBackStack();
-                    return true;
-                }
-                break;
-            }
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
